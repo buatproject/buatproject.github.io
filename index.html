@@ -13,10 +13,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/i.png"/>
 
     <!-- CSS
-    ================================================== -->       
+    ================================================== -->  
+<style>	
+*{margin: 0; padding: 0}
+@keyframes autopopup {
+    from {opacity: 0;margin-top:-200px;}
+    to {opacity: 1;}
+}
+#close {
+    background-color: rgba(64, 68, 65, 0.5);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    animation:autopopup 3.5s;
+}
+#close:target {
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    transition:all 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (min-width: 768px){
+    .container-popup {
+        width:30%;
+    }
+}
+@media (max-width: 767px){
+    .container-popup {
+        width:100%;
+    }
+}
+.container-popup {
+    position: relative;
+    margin: 15% auto;
+    padding: 4px 3px;
+    background-color: #e1fff5;
+    color: #333;
+    border-radius: 8px;
+}
+.container-popup img {
+    width: 100%
+}
+.close {
+    position: absolute;
+    top:9px;
+    right:3px;
+    background-color: #33898B;
+    padding:7px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 1;
+    color:#fff;
+}
+</style>	
     <!-- Bootstrap css file-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Font awesome css file-->
@@ -358,10 +414,10 @@
            <div class="col-lg-6 col-md-6 col-sm-6">
              <div class="footer_right">
                <ul class="social_nav">
-                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                 <li><a href="https://www.facebook.com/gpenerus"><i class="fa fa-facebook"></i></a></li>
+                 <li><a href="https://twitter.com/DimasInsan"><i class="fa fa-twitter"></i></a></li>
+                 <li><a href="https://www.instagram.com/the_smiling_general/"><i class="fa fa-instagram"></i></a></li>
+                 <li><a href="tel:08999204381"><i class="fa fa-phone"></i></a></li>
                </ul>
              </div>
            </div>
@@ -370,6 +426,17 @@
       </footer>
       <!--=========== END FOOTER ================-->
 
+	  
+	  <!-- start popup -->
+    <div id="close">
+        <div class="container-popup">
+            <form action="#" method="post" class="popup-form">
+                <img src="img/a.jpg" alt="">
+            </form>
+            <a class="close" href="#close">close</a>
+        </div>
+    </div>
+<!-- end popup -->
      <!-- Javascript Files
      ================================================== -->
   
