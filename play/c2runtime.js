@@ -17431,6 +17431,7 @@ cr.getObjectRefTable = function () { return [
 	cr.behaviors.DragnDrop.prototype.acts.SetEnabled,
 	cr.system_object.prototype.acts.AddVar,
 	cr.plugins_.Text.prototype.acts.SetText,
+	cr.plugins_.Sprite.prototype.acts.Destroy,
 	cr.system_object.prototype.cnds.CompareVar,
 	cr.system_object.prototype.acts.SetVar,
 	cr.plugins_.Text.prototype.acts.SetVisible,

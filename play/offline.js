@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1517701808,
+	"version": 1517873352,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -10,6 +10,7 @@
 		"images/sprite-sheet0.png",
 		"images/garis-sheet0.png",
 		"images/dragme3-sheet0.png",
+		"images/background_hitam-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
